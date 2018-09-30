@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build: ./app
+    image: devapp
+    volumes:
+     - ./:/app
+  notebook:
+    build: ./notebook
+    image: notebook
+    ports:
+    - "8888:8888"
+    volumes:
+     - ./:/app

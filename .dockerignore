@@ -1,0 +1,7 @@
+.vscode
+.DS_Store
+**/*.pyc
+*checkpoint.ipynb
+**Dockerfile
+**/*.txt
+**/*.sh

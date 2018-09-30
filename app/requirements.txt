@@ -1,0 +1,17 @@
+numpy
+scipy
+lightgbm
+pandas
+dask[complete]
+checkpointer
+pickleable
+matplotlib
+tqdm
+tsfresh
+xgboost
+tensorflow
+tensorflow-hub
+hyperopt
+pyodbc
+fbprophet
+boto3
