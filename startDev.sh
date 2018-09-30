@@ -1,4 +1,4 @@
 #!/bin/bash
 docker-compose up -d --build
-docker-compose logs notebook
+docker exec -it "$(docker ps -aqf 'name=notebook')" /bin/sh -c "jupyter notebook list"
 docker-compose logs -f app
