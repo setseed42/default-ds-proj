@@ -31,7 +31,7 @@ RUN /bin/bash -c "source ~/.bashrc"
 
 # Set the locale
 RUN locale-gen en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
+RUN dpkg-reconfigure locales
 
 #Install python packages
 RUN pip --no-cache-dir install --upgrade pip
@@ -39,7 +39,7 @@ RUN pip --no-cache-dir install Cython pystan
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
+
 COPY . /app
 WORKDIR /app
-RUN echo 'aaa'
 CMD ["/bin/bash", "app/runPydemon.sh"]
