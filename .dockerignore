@@ -3,5 +3,4 @@
 **/*.pyc
 *checkpoint.ipynb
 **Dockerfile
-**/*.txt
 **/*.sh
