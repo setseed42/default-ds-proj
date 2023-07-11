@@ -12,7 +12,6 @@ xgboost
 tensorflow
 tensorflow-hub
 hyperopt
-fbprophet
 boto3
 jupyter
 jupyterlab

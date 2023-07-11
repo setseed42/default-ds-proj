@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt
 
 # Install nodemon
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash
 RUN apt-get install -y nodejs
 RUN apt-get install -y build-essential
 RUN npm install -g nodemon
